@@ -11,6 +11,7 @@ function ChangerImage(element) {
     condition = condition || document.getElementById("q3").src==document.getElementById("q6").src && document.getElementById("q6").src==document.getElementById("q9").src && !(getImageFileName(document.getElementById("q9").src) == "Vide.png");
     condition = condition || document.getElementById("q1").src==document.getElementById("q5").src && document.getElementById("q5").src==document.getElementById("q9").src && !(getImageFileName(document.getElementById("q9").src) == "Vide.png");
     condition = condition || document.getElementById("q3").src==document.getElementById("q5").src && document.getElementById("q5").src==document.getElementById("q7").src && !(getImageFileName(document.getElementById("q7").src) == "Vide.png");;
+    condition = condition || tour==10
 
     if (!condition && getImageFileName(document.getElementById(element.id).src) == "Vide.png"){
         if (tour%2==1){
